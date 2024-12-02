@@ -1,0 +1,110 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  background-color: rgb(
+    120,
+    120,
+    250
+  ); //0 até 255 1º valor vermelho, 2º valor verde, 3º valor azul
+  background-color: rgb(124, 252, 0);
+  background-color: rgba(
+    124,
+    252,
+    0,
+    0.5
+  ); //alpha, trabalha com opacidade. Vai de 0.1 até 0.9
+  height: 15vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  //   @media (min-width: 201px) and (max-width: 400px) {
+  //     background-color: rgb(255, 20, 147);
+  //   }
+}
+
+//----- TAMANHO DAS TELAS
+
+//WATCH - relógio - (max-width: 200px)
+
+@media (max-width: 200px) {
+  header {
+    height: 100vh;
+    background-color: rgba(138, 43, 226, 0.3);
+    h1 {
+      font-size: 1.4rem;
+      text-align: center;
+    }
+  }
+}
+
+//MOBILE - (min-width: 201px) and (max-width: 500px)
+
+@media (min-width: 201px) and (max-width: 500px) {
+  header {
+    background-color: rgb(255, 191, 127);
+    h1 {
+      text-align: center;
+    }
+  }
+}
+
+//TABLET (min-width: 501px) and (max-width: 900px)
+@media (min-width: 501px) and (max-width: 900px) {
+  header {
+    background-color: rgb(255, 215, 0);
+    height: 20vh;
+    h1 {
+      width: 60%;
+      border: solid;
+      text-align: center;
+      font-size: 3rem;
+    }
+  }
+}
+
+//LAPTOP / NOTEBOOK (min-width 901px) and (max-width: 1500px)
+
+@media (min-width: 901px) and (max-width: 1500px) {
+  header {
+    background-color: rgb(255, 255, 224);
+    height: 20vh;
+    h1 {
+      width: 60%;
+      border: solid;
+      text-align: center;
+      font-size: 3rem;
+    }
+  }
+}
+
+//DESKTOP (min-width: 1501px) and (max-width: 1800px)
+
+@media (min-width: 1501px) and (max-width: 1800px) {
+  header {
+    background-color: rgb(77, 101, 126);
+    height: 20vh;
+    h1 {
+      border: solid;
+      text-align: center;
+      font-size: 4rem;
+      color: red;
+    }
+  }
+}
+
+//WIDE - SCREEN- DESKTOP - DESKTOP DE TELA AMPLA (min-width: 1801px)
+@media (min-width: 1801px) {
+  header {
+    background-color: tomato;
+    height: 30vh;
+
+    h1 {
+      font-size: 4rem;
+    }
+  }
+}
